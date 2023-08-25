@@ -8,6 +8,7 @@ This repository contains a simple login form implementation using Formik and Mat
 - Form validation for email and password using Yup schema.
 - Integration of Formik for handling form values, submission, and validation.
 - Material-UI components for styling the form elements.
+- Hover effect with shadow on the form for better visual feedback.
 
 #### Usage
 
@@ -16,6 +17,10 @@ This repository contains a simple login form implementation using Formik and Mat
 3. Enter your credentials and click the "Submit" button.
 4. Formik and Yup will handle form submission and validation.
 5. If there are errors, they will be displayed below the respective fields.
+
+#### Hover Effect and Shadow
+
+The login form now features a hover effect with a shadow on all four sides of the form. The shadow provides visual feedback when hovering over the form, enhancing the user experience without affecting the form's position.
 
 #### Code Explanation
 
@@ -40,6 +45,7 @@ Bu depo, Formik ve Material-UI bileşenlerini kullanarak basit bir giriş formu 
 - Yup şemasını kullanarak e-posta ve şifre için form doğrulama.
 - Formik entegrasyonu ile form değerlerini, gönderimini ve doğrulamayı yönetme.
 - Form elemanlarını biçimlendirmek için Material-UI bileşenleri.
+- Formun üzerine gelindiğinde kenarlarında gölge ve hover etkisi.
 
 #### Kullanım
 
@@ -48,6 +54,12 @@ Bu depo, Formik ve Material-UI bileşenlerini kullanarak basit bir giriş formu 
 3. Kimlik bilgilerinizi girin ve "Gönder" düğmesine tıklayın.
 4. Formik ve Yup, form gönderimini ve doğrulamayı yönetecektir.
 5. Hatalar varsa, ilgili alanların altında görüntülenecektir.
+
+#### Hover Efekti ve Gölge
+
+Giriş formu artık kenarlarında gölge efekti ve formun üzerine gelindiğinde görsel geri bildirim sağlayan bir hover etkisi içeriyor. Gölge efekti, formun üzerine gelindiğinde daha belirgin hale gelirken, formun konumunu etkilemez.
+
+
 
 #### Kod Açıklaması
 

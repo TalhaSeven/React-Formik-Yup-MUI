@@ -4,13 +4,15 @@ import { loginSchema } from "../components/LoginForm";
 
 const Login = () => {
   return (
-    <Box   sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      minHeight: "100vh",
-    }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "100vh",
+      }}
+    >
       <Container
         maxWidth="xs"
         sx={{
@@ -22,6 +24,11 @@ const Login = () => {
           border: "4px solid #ccc",
           borderRadius: "8px",
           padding: "20px",
+          boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
+          transition: "box-shadow 0.3s",
+          "&:hover": {
+            boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.2)",
+          },
         }}
       >
         <Typography variant="h5" mb={2}>
