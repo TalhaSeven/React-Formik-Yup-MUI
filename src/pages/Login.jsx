@@ -55,7 +55,7 @@ const Login = () => {
             isSubmitting,
           }) => (
             <form onSubmit={handleSubmit} style={{ width: "100%" }}>
-              <Box mb={2}>
+              <Box mb={2} sx={{ position: "relative" }} style={{marginTop:"20px"}}>
                 <TextField
                   label="Email"
                   name="email"
@@ -66,10 +66,16 @@ const Login = () => {
                   onBlur={handleBlur}
                   value={values.email}
                   error={touched.email && Boolean(errors.email)}
-                  helperText={touched.email && errors.email}
                 />
+                {touched.email && errors.email && (
+                  <Typography
+                    sx={{ position: "absolute", bottom: -35, color: "red" }}
+                  >
+                    {errors.email}
+                  </Typography>
+                )}
               </Box>
-              <Box mb={2}>
+              <Box mb={2} sx={{ position: "relative" }} style={{ marginBottom:"50px", marginTop:"50px"}}>
                 <TextField
                   label="Password"
                   name="password"
@@ -80,14 +86,22 @@ const Login = () => {
                   onBlur={handleBlur}
                   value={values.password}
                   error={touched.password && Boolean(errors.password)}
-                  helperText={touched.password && errors.password}
                 />
+                {touched.password && errors.password && (
+                  <Typography
+                    sx={{ position: "absolute", bottom: -35, color: "red" }}
+                  >
+                    {errors.password}
+                  </Typography>
+                )}
               </Box>
+
               <Box textAlign="center">
                 <Button
                   variant="contained"
                   type="submit"
                   disabled={isSubmitting}
+                  sx={{width:"50%"}}
                 >
                   Submit
                 </Button>
