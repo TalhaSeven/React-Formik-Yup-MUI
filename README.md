@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Login Form Using Formik and Material-UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a simple login form implementation using Formik and Material-UI components. The form includes email and password fields with validation, and it demonstrates how to handle form submission and validation using Formik and Yup schemas.
 
-## Available Scripts
+#### Features
 
-In the project directory, you can run:
+- User-friendly login form with email and password fields.
+- Form validation for email and password using Yup schema.
+- Integration of Formik for handling form values, submission, and validation.
+- Material-UI components for styling the form elements.
 
-### `yarn start`
+#### Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Open your browser and navigate to `http://localhost:3000`.
+2. The login form will be displayed with email and password fields.
+3. Enter your credentials and click the "Submit" button.
+4. Formik and Yup will handle form submission and validation.
+5. If there are errors, they will be displayed below the respective fields.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Code Explanation
 
-### `yarn test`
+The project consists of two main components: `Login` and `LoginForm`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `Login`: This component creates the overall layout of the login form using Material-UI's `Container`, `Typography`, and other components. It integrates the Formik form using the `Formik` component and applies the `loginSchema` for form validation.
 
-### `yarn build`
+- `LoginForm`: This is a separate component that represents the actual login form fields. It receives props like `values`, `handleChange`, `errors`, `touched`, and `handleBlur` from Formik. It uses Material-UI's `TextField` and `Button` components to create the input fields and submit button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Schema Validation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The form validation is implemented using Yup schema validation. The validation rules for the email and password fields are defined in the `loginSchema` in the `loginSchema.js` file. The schema ensures that the email is in the correct format and the password meets specific complexity requirements.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+# Formik ve Material-UI Kullanarak Giriş Formu
 
-### `yarn eject`
+Bu depo, Formik ve Material-UI bileşenlerini kullanarak basit bir giriş formu uygulaması içerir. Form, e-posta ve şifre alanlarını içerir, doğrulama işlemlerini yapmayı ve Formik ve Yup şemalarını kullanarak form gönderimini ve doğrulamayı nasıl yöneteceğinizi gösterir.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Özellikler
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Kullanıcı dostu giriş formu, e-posta ve şifre alanlarıyla.
+- Yup şemasını kullanarak e-posta ve şifre için form doğrulama.
+- Formik entegrasyonu ile form değerlerini, gönderimini ve doğrulamayı yönetme.
+- Form elemanlarını biçimlendirmek için Material-UI bileşenleri.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Kullanım
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Tarayıcınızı açın ve `http://localhost:3000` adresine gidin.
+2. Giriş formu, e-posta ve şifre alanlarıyla birlikte görüntülenecektir.
+3. Kimlik bilgilerinizi girin ve "Gönder" düğmesine tıklayın.
+4. Formik ve Yup, form gönderimini ve doğrulamayı yönetecektir.
+5. Hatalar varsa, ilgili alanların altında görüntülenecektir.
 
-## Learn More
+#### Kod Açıklaması
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Proje, `Login` ve `LoginForm` olmak üzere iki ana bileşenden oluşur.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `Login`: Bu bileşen, giriş formunun genel düzenini Material-UI'nin `Container`, `Typography` ve diğer bileşenlerini kullanarak oluşturur. Formik formunu `Formik` bileşeni kullanarak entegre eder ve form doğrulaması için `loginSchema`'yı uygular.
 
-### Code Splitting
+- `LoginForm`: Bu, gerçek giriş formu alanlarını temsil eden ayrı bir bileşendir. Formik'ten `values`, `handleChange`, `errors`, `touched` ve `handleBlur` gibi özellikleri alır. Giriş alanlarını ve gönder düğmesini oluşturmak için Material-UI'nin `TextField` ve `Button` bileşenlerini kullanır.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Şema Doğrulaması
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Form doğrulaması, Yup şema doğrulamasını kullanılarak uygulanır. E-posta ve şifre alanları için doğrulama kuralları, `loginSchema.js` dosyasındaki `loginSchema` içinde tanımlanır. Şema, e-postanın doğru formatta olduğunu ve şifrenin belirli karmaşıklık gereksinimlerini karşıladığını sağlar.
